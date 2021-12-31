@@ -17,8 +17,7 @@ namespace VignetteRemover
     {
         public override void OnSceneWasInitialized(int buildindex, string sceneName)
         {
-            GameObject vignette = GameObject.Find("Vignetter");
-            vignette.gameObject.SetActive(false);
+            GameObject.Find("Vignetter").SetActive(false);
         }
     }
 }
